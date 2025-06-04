@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="4" failed="0" skipped="2">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-02T10:27:00 IST" name="Suite" finished-at="2025-06-02T10:27:58 IST" duration-ms="57843">
+    <groups>
+      <group name="MakeOrder">
+        <method signature="StandAloneTest.submitOrder(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:practise.Framework.StandAloneTest@7b9a4292]" name="submitOrder" class="practise.Framework.StandAloneTest"/>
+        <method signature="StandAloneTest.order_info(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:practise.Framework.StandAloneTest@7b9a4292]" name="order_info" class="practise.Framework.StandAloneTest"/>
+      </group> <!-- MakeOrder -->
+    </groups>
+    <test started-at="2025-06-02T10:27:00 IST" name="Test for ErrorValidation" finished-at="2025-06-02T10:27:16 IST" duration-ms="16563">
+      <class name="practise.Framework.ErrorValidations">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:practise.Framework.ErrorValidations@765d7657]" started-at="2025-06-02T10:27:00 IST" name="launchApp" finished-at="2025-06-02T10:27:16 IST" duration-ms="16532" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: Could not create a session: The automation session ended unexpected while attempting to pair with it. 
+Host info: host: 'Maheeps-MacBook-Air.local', ip: '2401:4900:4e7a:25af:4c41:20ba:fb44:30c%en0'
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '24.0.1'
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The automation session ended unexpected while attempting to pair with it. 
+Host info: host: 'Maheeps-MacBook-Air.local', ip: '2401:4900:4e7a:25af:4c41:20ba:fb44:30c%en0'
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '24.0.1'
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:84)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:80)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:57)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:48)
+at practise.TestComponents.BaseTest.driverInvoke(BaseTest.java:47)
+at practise.TestComponents.BaseTest.launchApp(BaseTest.java:59)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+at java.base/java.lang.Thread.run(Thread.java:1447)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="aerrorValidation()[pri:1, instance:practise.Framework.ErrorValidations@765d7657]" started-at="2025-06-02T10:27:16 IST" name="aerrorValidation" finished-at="2025-06-02T10:27:16 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: Could not create a session: The automation session ended unexpected while attempting to pair with it. 
+Host info: host: 'Maheeps-MacBook-Air.local', ip: '2401:4900:4e7a:25af:4c41:20ba:fb44:30c%en0'
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '24.0.1'
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The automation session ended unexpected while attempting to pair with it. 
+Host info: host: 'Maheeps-MacBook-Air.local', ip: '2401:4900:4e7a:25af:4c41:20ba:fb44:30c%en0'
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '24.0.1'
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:84)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:80)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:57)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:48)
+at practise.TestComponents.BaseTest.driverInvoke(BaseTest.java:47)
+at practise.TestComponents.BaseTest.launchApp(BaseTest.java:59)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+at java.base/java.lang.Thread.run(Thread.java:1447)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aerrorValidation -->
+        <test-method is-config="true" signature="closeSession()[pri:0, instance:practise.Framework.ErrorValidations@765d7657]" started-at="2025-06-02T10:27:16 IST" name="closeSession" finished-at="2025-06-02T10:27:16 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSession -->
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:practise.Framework.ErrorValidations@765d7657]" started-at="2025-06-02T10:27:16 IST" name="launchApp" finished-at="2025-06-02T10:27:16 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="directLogin()[pri:2, instance:practise.Framework.ErrorValidations@765d7657]" started-at="2025-06-02T10:27:16 IST" name="directLogin" finished-at="2025-06-02T10:27:16 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: Could not create a session: The automation session ended unexpected while attempting to pair with it. 
+Host info: host: 'Maheeps-MacBook-Air.local', ip: '2401:4900:4e7a:25af:4c41:20ba:fb44:30c%en0'
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '24.0.1'
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The automation session ended unexpected while attempting to pair with it. 
+Host info: host: 'Maheeps-MacBook-Air.local', ip: '2401:4900:4e7a:25af:4c41:20ba:fb44:30c%en0'
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '24.0.1'
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:84)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:80)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:57)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:48)
+at practise.TestComponents.BaseTest.driverInvoke(BaseTest.java:47)
+at practise.TestComponents.BaseTest.launchApp(BaseTest.java:59)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+at java.base/java.lang.Thread.run(Thread.java:1447)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- directLogin -->
+        <test-method is-config="true" signature="closeSession()[pri:0, instance:practise.Framework.ErrorValidations@765d7657]" started-at="2025-06-02T10:27:16 IST" name="closeSession" finished-at="2025-06-02T10:27:16 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSession -->
+      </class> <!-- practise.Framework.ErrorValidations -->
+    </test> <!-- Test for ErrorValidation -->
+    <test started-at="2025-06-02T10:27:00 IST" name="Test for OrderSubmit" finished-at="2025-06-02T10:27:58 IST" duration-ms="57843">
+      <class name="practise.Framework.StandAloneTest">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:practise.Framework.StandAloneTest@7b9a4292]" started-at="2025-06-02T10:27:00 IST" name="launchApp" finished-at="2025-06-02T10:27:02 IST" duration-ms="1824" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="submitOrder(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:practise.Framework.StandAloneTest@7b9a4292]" started-at="2025-06-02T10:27:02 IST" name="submitOrder" data-provider="dataJson" finished-at="2025-06-02T10:27:06 IST" duration-ms="4455" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[msd7@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Qwerty@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ZARA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="closeSession()[pri:0, instance:practise.Framework.StandAloneTest@7b9a4292]" started-at="2025-06-02T10:27:06 IST" name="closeSession" finished-at="2025-06-02T10:27:16 IST" duration-ms="10035" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSession -->
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:practise.Framework.StandAloneTest@7b9a4292]" started-at="2025-06-02T10:27:16 IST" name="launchApp" finished-at="2025-06-02T10:27:17 IST" duration-ms="1445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="submitOrder(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:practise.Framework.StandAloneTest@7b9a4292]" started-at="2025-06-02T10:27:17 IST" name="submitOrder" data-provider="dataJson" finished-at="2025-06-02T10:27:22 IST" duration-ms="4359" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[msd712@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Qwerty@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ADIDAS]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="closeSession()[pri:0, instance:practise.Framework.StandAloneTest@7b9a4292]" started-at="2025-06-02T10:27:22 IST" name="closeSession" finished-at="2025-06-02T10:27:32 IST" duration-ms="10226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSession -->
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:practise.Framework.StandAloneTest@7b9a4292]" started-at="2025-06-02T10:27:32 IST" name="launchApp" finished-at="2025-06-02T10:27:33 IST" duration-ms="1417" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="order_info(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:practise.Framework.StandAloneTest@7b9a4292]" started-at="2025-06-02T10:27:33 IST" name="order_info" data-provider="dataJson" finished-at="2025-06-02T10:27:35 IST" depends-on-methods="practise.Framework.StandAloneTest.submitOrder" duration-ms="1303" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[msd7@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Qwerty@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ZARA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- order_info -->
+        <test-method is-config="true" signature="closeSession()[pri:0, instance:practise.Framework.StandAloneTest@7b9a4292]" started-at="2025-06-02T10:27:35 IST" name="closeSession" finished-at="2025-06-02T10:27:45 IST" duration-ms="10022" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSession -->
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:practise.Framework.StandAloneTest@7b9a4292]" started-at="2025-06-02T10:27:45 IST" name="launchApp" finished-at="2025-06-02T10:27:46 IST" duration-ms="1452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="order_info(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:practise.Framework.StandAloneTest@7b9a4292]" started-at="2025-06-02T10:27:46 IST" name="order_info" data-provider="dataJson" finished-at="2025-06-02T10:27:48 IST" depends-on-methods="practise.Framework.StandAloneTest.submitOrder" duration-ms="1237" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[msd712@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Qwerty@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ADIDAS]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- order_info -->
+        <test-method is-config="true" signature="closeSession()[pri:0, instance:practise.Framework.StandAloneTest@7b9a4292]" started-at="2025-06-02T10:27:48 IST" name="closeSession" finished-at="2025-06-02T10:27:58 IST" duration-ms="10022" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSession -->
+      </class> <!-- practise.Framework.StandAloneTest -->
+    </test> <!-- Test for OrderSubmit -->
+  </suite> <!-- Suite -->
+</testng-results>
